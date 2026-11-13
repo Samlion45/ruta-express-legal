@@ -1,170 +1,195 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Política de Privacidad — Ruta Express</title>
-<style>
-  :root{
-    --azul:#2563EB; --cian:#00C2FF; --naranja:#FF8A00;
-    --verde:#22C55E; --marfil:#F2F4F7; --noche:#1E293B;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    color:var(--noche); line-height:1.7; background:var(--marfil);
-  }
-  header{
-    background:linear-gradient(135deg,var(--azul),var(--cian));
-    color:#fff; padding:48px 24px 40px;
-  }
-  .wrap{max-width:760px; margin:0 auto; padding:0 24px}
-  .brand{display:flex; align-items:center; gap:14px; margin-bottom:18px}
-  .logo{
-    width:48px;height:48px;border-radius:12px;background:#fff;
-    display:flex;align-items:center;justify-content:center;
-    font-weight:800;font-size:24px;color:var(--azul);flex-shrink:0;
-  }
-  .logo span{color:var(--naranja)}
-  header h1{font-size:28px;font-weight:700;letter-spacing:-.5px;margin-bottom:6px}
-  header p{opacity:.92;font-size:15px}
-  main{background:var(--marfil); padding:40px 0 64px}
-  .card{
-    background:#fff;border-radius:16px;padding:32px 28px;
-    box-shadow:0 1px 3px rgba(30,41,59,.08);
-  }
-  .updated{
-    display:inline-block;font-size:13px;color:#64748b;
-    background:var(--marfil);padding:6px 12px;border-radius:8px;margin-bottom:28px;
-  }
-  h2{
-    font-size:19px;font-weight:700;color:var(--azul);
-    margin:32px 0 12px;padding-top:8px;
-  }
-  h2:first-of-type{margin-top:0}
-  h3{font-size:16px;font-weight:600;margin:20px 0 8px}
-  p,li{font-size:15px;color:#334155;margin-bottom:12px}
-  ul{padding-left:22px;margin-bottom:12px}
-  li{margin-bottom:8px}
-  strong{color:var(--noche)}
-  a{color:var(--azul)}
-  .contact{
-    background:var(--marfil);border-radius:12px;padding:20px 22px;margin-top:28px;
-    border-left:4px solid var(--naranja);
-  }
-  .contact h3{margin-top:0;color:var(--noche)}
-  footer{
-    text-align:center;padding:32px 24px;color:#94a3b8;font-size:13px;
-  }
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidad · RutaExpress</title>
+<meta name="description" content="Qué datos trata RutaExpress, para qué, con quién se comparten, cuánto tiempo se conservan y cómo ejercer tus derechos.">
+<meta name="theme-color" content="#2563EB">
+<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <div class="brand">
-      <div class="logo">R<span>E</span></div>
-      <div>
-        <h1>Política de Privacidad</h1>
-        <p>Ruta Express — Tu ruta, sin complicaciones.</p>
-      </div>
-    </div>
+<header class="cabecera">
+  <div class="envoltura">
+    <a class="marca" href="index.html"><span class="logo" aria-hidden="true"><b>R</b><i></i></span><strong>Ruta<span>Express</span></strong></a>
+    <h1>Política de Privacidad</h1>
+    <p>Viajes en Montalvo, Los Ríos, Ecuador · App para Android e iOS</p>
   </div>
 </header>
+<nav class="nav" aria-label="Documentos legales">
+  <ul>
+    <li><a href="index.html" aria-current="page">Privacidad</a></li>
+    <li><a href="terminos.html">Términos</a></li>
+    <li><a href="eliminar-cuenta.html">Eliminar cuenta</a></li>
+    <li><a href="soporte.html">Soporte</a></li>
+  </ul>
+</nav>
 
-<main>
-  <div class="wrap">
-    <div class="card">
-      <span class="updated">Última actualización: 23 de junio de 2026</span>
+<main class="envoltura">
+<article class="tarjeta">
+  <span class="fecha">Última actualización: 13 de noviembre de 2026</span>
+  <p>Esta política explica qué datos personales trata la aplicación <strong>RutaExpress</strong>, para qué los usamos, con quién se comparten, cuánto tiempo se conservan y cómo puedes ejercer tus derechos. Se aplica a pasajeros y conductores en Android e iOS. La redactamos tomando como referencia la Ley Orgánica de Protección de Datos Personales del Ecuador (LOPDP).</p>
 
-      <p>En <strong>Ruta Express</strong> respetamos tu privacidad y nos comprometemos a proteger tus datos personales. Esta Política de Privacidad explica qué información recopilamos, cómo la usamos y qué derechos tienes. Al usar nuestra aplicación, aceptas las prácticas descritas en este documento.</p>
-
-      <h2>1. Responsable del tratamiento</h2>
-      <p>Ruta Express es operado por Samir Alejandro Duche Gallegos, con domicilio en Montalvo, provincia de Los Ríos, Ecuador. Para cualquier consulta sobre tus datos puedes escribirnos al correo indicado al final de esta política.</p>
-
-      <h2>2. Información que recopilamos</h2>
-      <p>Recopilamos los siguientes datos para que el servicio funcione correctamente:</p>
-
-      <h3>Datos de cuenta</h3>
-      <ul>
-        <li>Nombre completo y número de cédula de identidad.</li>
-        <li>Número de teléfono y correo electrónico.</li>
-        <li>Fotografía de perfil.</li>
-      </ul>
-
-      <h3>Datos de conductores</h3>
-      <ul>
-        <li>Número de licencia de conducir y su fotografía.</li>
-        <li>Fotografías del vehículo y documentos de matrícula.</li>
-        <li>Datos de validación de identidad mediante servicios oficiales.</li>
-      </ul>
-
-      <h3>Datos de ubicación</h3>
-      <ul>
-        <li>Ubicación GPS en tiempo real durante el uso del servicio, necesaria para conectar pasajeros con conductores, calcular rutas y mostrar el progreso del viaje.</li>
-        <li>La ubicación se recopila únicamente mientras la aplicación está en uso para solicitar o realizar un viaje.</li>
-      </ul>
-
-      <h3>Datos de uso</h3>
-      <ul>
-        <li>Historial de viajes, puntos de origen y destino.</li>
-        <li>Calificaciones y comentarios entre pasajeros y conductores.</li>
-        <li>Información técnica del dispositivo para diagnóstico y seguridad.</li>
-      </ul>
-
-      <h2>3. Cómo usamos tu información</h2>
-      <ul>
-        <li>Conectar a pasajeros con conductores cercanos.</li>
-        <li>Calcular rutas, tiempos estimados y mostrar el viaje en el mapa.</li>
-        <li>Verificar la identidad de los conductores para mayor seguridad.</li>
-        <li>Habilitar funciones de seguridad como el botón de emergencia y el compartir viaje.</li>
-        <li>Mejorar el servicio, prevenir fraudes y brindar soporte.</li>
-      </ul>
-
-      <h2>4. Funciones de seguridad</h2>
-      <p>Ruta Express incluye un botón de emergencia que puede contactar a servicios de auxilio, así como la opción de compartir los detalles de tu viaje con contactos de confianza. Al usar estas funciones, ciertos datos de tu viaje y ubicación pueden compartirse con los destinatarios que tú elijas.</p>
-
-      <h2>5. Con quién compartimos tu información</h2>
-      <p>No vendemos tus datos personales. Compartimos información únicamente en estos casos:</p>
-      <ul>
-        <li><strong>Entre usuarios del viaje:</strong> el pasajero y el conductor ven mutuamente el nombre, foto, calificación y ubicación necesaria para completar el viaje.</li>
-        <li><strong>Proveedores de servicios:</strong> usamos servicios de terceros para mapas (Google Maps), almacenamiento y autenticación (Supabase) y validación de documentos. Estos proveedores solo acceden a los datos necesarios para su función.</li>
-        <li><strong>Autoridades:</strong> cuando la ley lo exija o para proteger la seguridad de las personas.</li>
-      </ul>
-
-      <h2>6. Almacenamiento y seguridad</h2>
-      <p>Tus datos se almacenan en servidores seguros con cifrado. Aplicamos medidas técnicas y organizativas razonables para protegerlos contra accesos no autorizados, pérdida o alteración. Conservamos la información solo durante el tiempo necesario para prestar el servicio o cumplir obligaciones legales.</p>
-
-      <h2>7. Tus derechos</h2>
-      <p>Tienes derecho a acceder, corregir o eliminar tus datos personales, así como a retirar tu consentimiento en cualquier momento. Para ejercer estos derechos, escríbenos al correo de contacto. También puedes eliminar tu cuenta desde la aplicación, lo que removerá tus datos personales salvo aquellos que debamos conservar por ley.</p>
-
-      <h2>8. Permisos del dispositivo</h2>
-      <ul>
-        <li><strong>Ubicación:</strong> para mostrar conductores cercanos y seguir el viaje.</li>
-        <li><strong>Cámara y galería:</strong> para subir fotos de perfil, vehículo y documentos.</li>
-        <li><strong>Notificaciones:</strong> para avisarte del estado de tu viaje.</li>
-      </ul>
-      <p>Puedes administrar o revocar estos permisos desde la configuración de tu teléfono en cualquier momento.</p>
-
-      <h2>9. Menores de edad</h2>
-      <p>Ruta Express no está dirigido a menores de 18 años. No recopilamos de forma intencional datos de menores. Si detectamos que un menor ha creado una cuenta, la eliminaremos.</p>
-
-      <h2>10. Cambios a esta política</h2>
-      <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Publicaremos la versión actualizada en esta misma página con su fecha de actualización. Te recomendamos revisarla periódicamente.</p>
-
-      <div class="contact">
-        <h3>11. Contacto</h3>
-        <p style="margin-bottom:6px">Si tienes preguntas sobre esta política o sobre tus datos, contáctanos:</p>
-        <p style="margin-bottom:0"><strong>Correo:</strong> samirduche8@gmail.com<br>
-        <strong>Responsable:</strong> Samir Alejandro Duche Gallegos<br>
-        <strong>Ubicación:</strong> Montalvo, Los Ríos, Ecuador</p>
-      </div>
-
-    </div>
+  <div class="indice">
+    <p>Contenido</p>
+    <ol>
+      <li><a href="#responsable">Responsable</a></li>
+      <li><a href="#datos">Datos que tratamos</a></li>
+      <li><a href="#ubicacion">Ubicación</a></li>
+      <li><a href="#finalidades">Finalidades y base legal</a></li>
+      <li><a href="#usuarios">Qué ven otros usuarios</a></li>
+      <li><a href="#proveedores">Proveedores</a></li>
+      <li><a href="#seguridad-viaje">Compartir viaje y emergencia</a></li>
+      <li><a href="#conservacion">Conservación</a></li>
+      <li><a href="#eliminacion">Eliminación de la cuenta</a></li>
+      <li><a href="#seguridad">Seguridad</a></li>
+      <li><a href="#derechos">Tus derechos</a></li>
+      <li><a href="#permisos">Permisos del dispositivo</a></li>
+      <li><a href="#menores">Menores de edad</a></li>
+      <li><a href="#publicidad">Publicidad y rastreo</a></li>
+      <li><a href="#cambios">Cambios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ol>
   </div>
+
+  <h2 id="responsable">1. Responsable del tratamiento</h2>
+  <p>RutaExpress es una plataforma tecnológica que conecta a pasajeros con conductores independientes en el cantón Montalvo, provincia de Los Ríos, Ecuador. El responsable del tratamiento de los datos es <strong>Samir Alejandro Duche Gallegos</strong>, con domicilio en Montalvo, Los Ríos, Ecuador. Contacto para privacidad: <a href="mailto:samirduche8@gmail.com">samirduche8@gmail.com</a>.</p>
+
+  <h2 id="datos">2. Datos que tratamos</h2>
+  <h3>Pasajeros</h3>
+  <ul>
+    <li><strong>Cuenta:</strong> nombres y apellidos, correo electrónico y contraseña (la contraseña la gestiona nuestro proveedor de autenticación; no se guarda en las tablas de perfiles).</li>
+    <li><strong>Foto de perfil</strong> (obligatoria al registrarte).</li>
+    <li><strong>Contacto de emergencia</strong> (opcional): nombre y teléfono, solo si lo añades en tu perfil.</li>
+    <li>Las cuentas creadas con versiones anteriores de la app pueden conservar el número de cédula y de celular que se solicitaban entonces. El registro actual de pasajeros ya no los pide.</li>
+  </ul>
+  <h3>Conductores</h3>
+  <ul>
+    <li><strong>Cuenta:</strong> nombre completo, número de cédula, correo electrónico y contraseña.</li>
+    <li><strong>Vehículo:</strong> placa, tipo de vehículo, número de asientos (busetas), foto del vehículo y, en busetas, una galería de hasta ocho fotos.</li>
+    <li><strong>Documentos de verificación:</strong> fotografías de la licencia de conducir (anverso y reverso), que solo revisa la administración.</li>
+    <li><strong>Foto de perfil</strong> y <strong>contacto de emergencia</strong> opcional.</li>
+    <li><strong>Gestión de la cuenta:</strong> estado de revisión (pendiente, aprobada, rechazada o suspendida), fechas de vigencia del acceso y los pagos de la cuota mensual que el conductor entrega en efectivo a la administración y que esta registra (monto, fecha y estado).</li>
+    <li><strong>Actividad:</strong> disponibilidad para recibir viajes, horas en las que estuvo disponible, ingresos calculados a partir de las tarifas de sus viajes completados y gastos que el propio conductor decida anotar.</li>
+  </ul>
+  <h3>Todos los usuarios, al usar la app</h3>
+  <ul>
+    <li><strong>Viajes:</strong> origen y destino (dirección y coordenadas), tipo de vehículo, tarifa propuesta, ofertas y contraofertas, estado del viaje, código de seguridad de recogida, calificaciones y comentarios opcionales.</li>
+    <li><strong>Reservas de busetas</strong> (paseos y viajes en grupo): origen, destino, fechas, número de pasajeros y de niños, notas y precio acordado.</li>
+    <li><strong>Mensajes:</strong> chat del viaje o de la reserva con la otra parte, y conversaciones con soporte.</li>
+    <li><strong>Cancelaciones:</strong> motivo elegido o escrito y los nombres de las partes.</li>
+    <li><strong>Ubicación:</strong> ver la sección 3.</li>
+    <li><strong>Datos técnicos:</strong> un identificador aleatorio de la instalación y el modelo del dispositivo, para mantener una sola sesión activa por cuenta, y el token de notificaciones push. No usamos herramientas de analítica ni de publicidad.</li>
+  </ul>
+
+  <h2 id="ubicacion">3. Ubicación</h2>
+  <ul>
+    <li><strong>Pasajeros:</strong> usamos tu ubicación mientras usas la app para mostrar el mapa, fijar el punto de recogida y guiar el viaje. Durante un viaje en curso la app guarda puntos del recorrido mientras está abierta.</li>
+    <li><strong>Conductores:</strong> con tu autorización (te mostramos un aviso antes de pedir el permiso), la app usa tu ubicación <strong>también en segundo plano</strong>, con la app minimizada o la pantalla bloqueada, <strong>mientras estás «Disponible» o tienes un viaje en curso</strong>, aunque todavía no tengas un viaje asignado. Así los pasajeros ven conductores cercanos y pueden seguir su viaje. Se detiene cuando desactivas «Disponible» y no tienes viajes en curso.</li>
+    <li><strong>Quién la ve:</strong> durante un viaje, la otra parte ve tu posición en el mapa. La última posición de los conductores aprobados puede mostrarse a usuarios registrados en el mapa de conductores cercanos. Los conductores aprobados ven el punto de recogida de las solicitudes de viaje disponibles.</li>
+    <li><strong>Recorrido de seguridad:</strong> durante un viaje en curso guardamos puntos del recorrido de pasajero y conductor. Solo la administración puede consultarlos ante una emergencia o reclamo, y están programados para eliminarse a los 7 días.</li>
+    <li>Puedes retirar el permiso de ubicación en cualquier momento desde los ajustes de tu teléfono; sin él no podrás pedir viajes ni recibirlos como conductor.</li>
+  </ul>
+
+  <h2 id="finalidades">4. Finalidades y base legal</h2>
+  <table class="tabla">
+    <thead><tr><th>Para qué</th><th>Datos</th></tr></thead>
+    <tbody>
+      <tr><td data-t="Para qué">Crear y proteger tu cuenta, mantener una sola sesión activa</td><td data-t="Datos">Cuenta, identificadores técnicos</td></tr>
+      <tr><td data-t="Para qué">Revisar y aprobar manualmente a los conductores</td><td data-t="Datos">Cédula, licencia, placa, fotos del vehículo</td></tr>
+      <tr><td data-t="Para qué">Conectar pasajeros y conductores, negociar la tarifa y guiar el viaje</td><td data-t="Datos">Viajes, ofertas, ubicación, mapas y rutas</td></tr>
+      <tr><td data-t="Para qué">Seguridad del viaje: código de recogida, recorrido, emergencia y reclamos</td><td data-t="Datos">Código, recorrido, contacto de emergencia, cancelaciones</td></tr>
+      <tr><td data-t="Para qué">Comunicación y avisos</td><td data-t="Datos">Mensajes, token de notificaciones</td></tr>
+      <tr><td data-t="Para qué">Calidad y confianza de la comunidad</td><td data-t="Datos">Calificaciones y comentarios</td></tr>
+      <tr><td data-t="Para qué">Gestionar el acceso de los conductores y sus registros de actividad</td><td data-t="Datos">Pagos registrados, vigencia, ingresos, gastos y horas</td></tr>
+    </tbody>
+  </table>
+  <p>La base del tratamiento es tu consentimiento, que otorgas al aceptar los <a href="terminos.html">Términos y Condiciones</a> y esta política al registrarte, y que puedes retirar eliminando tu cuenta. Algunos tratamientos son necesarios para prestar el servicio que solicitas; también podemos tratar datos para cumplir obligaciones legales o atender requerimientos de autoridades competentes.</p>
+
+  <h2 id="usuarios">5. Qué ven otros usuarios</h2>
+  <ul>
+    <li><strong>Del conductor:</strong> nombre, foto de perfil, calificación, placa, tipo y foto del vehículo y, en busetas, su galería y número de asientos.</li>
+    <li><strong>Del pasajero:</strong> nombre, foto de perfil y calificación.</li>
+    <li><strong>No se muestran a otros usuarios:</strong> número de cédula, documentos, correo, teléfono ni contacto de emergencia.</li>
+    <li>Las fotos de perfil y de vehículo se alojan en un almacenamiento al que se accede mediante enlaces web: cualquier persona que obtenga el enlace exacto podría verlas.</li>
+  </ul>
+
+  <h2 id="proveedores">6. Proveedores y transferencias internacionales</h2>
+  <p>No vendemos tus datos personales. Para que la app funcione utilizamos estos proveedores, que tratan los datos necesarios para su servicio:</p>
+  <table class="tabla">
+    <thead><tr><th>Proveedor</th><th>Uso</th></tr></thead>
+    <tbody>
+      <tr><td data-t="Proveedor">Supabase</td><td data-t="Uso">Autenticación (correo y contraseña), base de datos, almacenamiento de fotos y documentos, mensajería en tiempo real y funciones del servidor.</td></tr>
+      <tr><td data-t="Proveedor">Google (Maps SDK y Routes API)</td><td data-t="Uso">Mostrar mapas y calcular rutas, tiempos y distancias a partir de los puntos de origen y destino.</td></tr>
+      <tr><td data-t="Proveedor">Expo, Google Firebase Cloud Messaging y Apple Push Notification service</td><td data-t="Uso">Entregar notificaciones push. El aviso puede incluir un fragmento del mensaje de chat o el motivo de una cancelación.</td></tr>
+      <tr><td data-t="Proveedor">Servicios de ubicación de Apple o Google</td><td data-t="Uso">Convertir coordenadas en direcciones legibles desde tu dispositivo.</td></tr>
+      <tr><td data-t="Proveedor">WhatsApp (solo si tú lo eliges)</td><td data-t="Uso">Escribir a la administración o avisar a tu contacto de emergencia. El mensaje se rige también por las condiciones de WhatsApp.</td></tr>
+    </tbody>
+  </table>
+  <p>Estos proveedores pueden almacenar o procesar los datos en servidores fuera del Ecuador. Al usar la app consientes esas transferencias, necesarias para prestar el servicio. Podemos compartir información con autoridades cuando la ley lo exija o para proteger la vida o la integridad de las personas.</p>
+
+  <h2 id="seguridad-viaje">7. Compartir viaje y botón de emergencia</h2>
+  <ul>
+    <li><strong>Compartir viaje:</strong> abre el menú de tu teléfono con un texto que incluye el nombre del conductor y la placa (o el nombre del pasajero), el destino y un enlace de Google Maps al punto de recogida. Tú eliges con quién compartirlo. No es un seguimiento en tiempo real.</li>
+    <li><strong>Emergencia (SOS):</strong> te permite llamar al ECU 911 o abrir WhatsApp con un mensaje preparado para tu contacto de emergencia (tu nombre, el de la otra parte, la placa y tu ubicación). Tú decides si lo envías; la app no envía alertas automáticamente.</li>
+    <li>Si escribes a la administración por WhatsApp desde la app de conductor, el mensaje se prellena con tu nombre, cédula y placa para identificar tu cuenta.</li>
+  </ul>
+
+  <h2 id="conservacion">8. Conservación de los datos</h2>
+  <ul>
+    <li><strong>Datos de la cuenta, perfil, documentos y fotos:</strong> mientras tu cuenta esté activa, hasta que la elimines.</li>
+    <li><strong>Solicitudes de viaje sin respuesta:</strong> se eliminan automáticamente aproximadamente un minuto después de crearse si nadie las toma.</li>
+    <li><strong>Recorrido de seguridad del viaje:</strong> programado para eliminarse a los 7 días.</li>
+    <li><strong>Viajes finalizados o cancelados:</strong> programados para eliminarse unos 2 meses después del viaje.</li>
+    <li><strong>Motivos de cancelación:</strong> pueden conservarse para control de calidad y seguridad después de eliminado el viaje.</li>
+    <li>Las copias de seguridad técnicas de nuestro proveedor de infraestructura, si existen, se eliminan según su propio ciclo de rotación.</li>
+  </ul>
+
+  <h2 id="eliminacion">9. Eliminación de la cuenta</h2>
+  <p>Puedes eliminar tu cuenta desde la app (<strong>Perfil → Eliminar mi cuenta</strong>) o solicitarlo por correo. Consulta los pasos, requisitos y qué datos se eliminan en la página <a href="eliminar-cuenta.html">Eliminar cuenta</a>.</p>
+
+  <h2 id="seguridad">10. Seguridad</h2>
+  <p>Aplicamos medidas técnicas y organizativas razonables, entre ellas:</p>
+  <ul>
+    <li>Conexiones cifradas (HTTPS) con nuestros servidores y proveedores.</li>
+    <li>Reglas de acceso en la base de datos: cada usuario accede a sus propios datos y a los de sus viajes; la administración tiene acceso para gestionar el servicio.</li>
+    <li>Los documentos de verificación se guardan en un almacenamiento privado; la administración los consulta mediante enlaces temporales de pocos minutos.</li>
+    <li>Las contraseñas las gestiona el servicio de autenticación de nuestro proveedor y no se guardan en nuestras tablas.</li>
+    <li>Una sola sesión activa por cuenta y protecciones que impiden que un usuario modifique su propio estado de aprobación.</li>
+  </ul>
+  <p>Ningún sistema es infalible: no podemos garantizar una seguridad absoluta. Si detectamos una vulneración que afecte a tus datos, te informaremos y a la autoridad competente conforme a la ley.</p>
+
+  <h2 id="derechos">11. Tus derechos</h2>
+  <p>Conforme a la LOPDP puedes ejercer tus derechos de acceso, rectificación y actualización, eliminación, oposición, portabilidad, suspensión del tratamiento y a no ser objeto de decisiones basadas únicamente en tratamientos automatizados. Puedes corregir parte de tus datos desde tu perfil o escribirnos a <a href="mailto:samirduche8@gmail.com">samirduche8@gmail.com</a> desde el correo de tu cuenta. Responderemos dentro de los plazos que establece la ley. También puedes presentar un reclamo ante la Superintendencia de Protección de Datos Personales del Ecuador.</p>
+
+  <h2 id="permisos">12. Permisos del dispositivo</h2>
+  <ul>
+    <li><strong>Ubicación</strong> (y en segundo plano para conductores): ver la sección 3.</li>
+    <li><strong>Cámara y fotos:</strong> para tu foto de perfil y, en conductores, las fotos del vehículo y de la licencia. Solo se suben las imágenes que eliges.</li>
+    <li><strong>Notificaciones:</strong> para avisarte de solicitudes, ofertas, mensajes y cambios en tu viaje.</li>
+  </ul>
+  <p>La app no solicita acceso al micrófono ni a tus contactos.</p>
+
+  <h2 id="menores">13. Menores de edad</h2>
+  <p>RutaExpress está dirigida a personas mayores de 18 años. Al registrarte declaras ser mayor de edad. Si sabemos que un menor creó una cuenta, la eliminaremos. En las reservas de busetas solo se registra la cantidad de niños del grupo, no sus datos personales.</p>
+
+  <h2 id="publicidad">14. Publicidad y rastreo</h2>
+  <p>La app no muestra publicidad, no vende datos personales y no rastrea tu actividad en apps o sitios web de otras empresas.</p>
+
+  <h2 id="cambios">15. Cambios a esta política</h2>
+  <p>Podemos actualizar esta política. Publicaremos la versión vigente en esta página con su fecha de actualización y, si los cambios son importantes, te lo comunicaremos por los medios disponibles.</p>
+
+  <h2 id="contacto">16. Contacto</h2>
+  <div class="contacto">
+    <div><b>Correo de privacidad</b><a href="mailto:samirduche8@gmail.com">samirduche8@gmail.com</a></div>
+    <div><b>Responsable</b>Samir Alejandro Duche Gallegos · Montalvo, Los Ríos, Ecuador</div>
+  </div>
+</article>
 </main>
 
-<footer>
-  © 2026 Ruta Express. Todos los derechos reservados.
+<footer class="pie">
+  <nav aria-label="Pie de página"><a href="index.html">Privacidad</a><a href="terminos.html">Términos</a><a href="eliminar-cuenta.html">Eliminar cuenta</a><a href="soporte.html">Soporte</a></nav>
+  © 2026 RutaExpress · Montalvo, Los Ríos, Ecuador
 </footer>
 </body>
 </html>

@@ -1,0 +1,96 @@
+/* RutaExpress · sitio legal. Sin dependencias externas: carga rápida y legible en Safari/Chrome móvil. */
+:root {
+  --azul: #2563EB; --azul-oscuro: #1E40AF; --naranja: #FF8A00; --cian: #00C2FF;
+  --enlace: #2563EB; --texto: #1E293B; --texto-suave: #475569; --gris: #64748B; --borde: #E2E8F0;
+  --fondo: #F5F7FB; --tarjeta: #FFFFFF; --aviso: #FFF7ED;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --enlace: #7DB3FF; --texto: #E2E8F0; --texto-suave: #CBD5E1; --gris: #94A3B8; --borde: #263449;
+    --fondo: #0B1220; --tarjeta: #111A2E; --aviso: #2A1E0F;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--fondo); color: var(--texto);
+  font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+a { color: var(--enlace); text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--naranja); outline-offset: 2px; border-radius: 6px; }
+
+/* ---------- cabecera ---------- */
+.cabecera { background: linear-gradient(135deg, var(--azul-oscuro), var(--azul) 60%, #3B82F6); color: #fff; }
+.cabecera .envoltura { padding: 28px 16px 30px; }
+.marca { display: flex; align-items: center; gap: 12px; color: #fff; text-decoration: none; }
+.logo {
+  width: 46px; height: 46px; border-radius: 13px; background: #fff; flex-shrink: 0;
+  display: grid; place-items: center; position: relative; box-shadow: 0 4px 14px rgba(0,0,0,.18);
+}
+.logo b { color: var(--azul); font-size: 26px; font-weight: 800; line-height: 1; }
+.logo i { position: absolute; top: 8px; right: 8px; width: 11px; height: 11px; border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg); background: var(--naranja); }
+.marca strong { font-size: 20px; letter-spacing: -.3px; }
+.marca strong span { color: #FFD7A8; }
+.cabecera h1 { margin: 22px 0 6px; font-size: clamp(26px, 6vw, 34px); line-height: 1.2; letter-spacing: -.5px; }
+.cabecera p { margin: 0; opacity: .92; }
+
+/* ---------- navegación ---------- */
+.nav { position: sticky; top: 0; z-index: 10; background: var(--tarjeta); border-bottom: 1px solid var(--borde);
+  box-shadow: 0 2px 10px rgba(15,23,42,.05); }
+.nav ul { display: flex; gap: 4px; margin: 0 auto; padding: 8px 12px; list-style: none; overflow-x: auto;
+  max-width: 860px; scrollbar-width: none; }
+.nav ul::-webkit-scrollbar { display: none; }
+.nav a { display: block; white-space: nowrap; padding: 8px 14px; border-radius: 999px; color: var(--texto-suave);
+  text-decoration: none; font-weight: 600; font-size: 15px; }
+.nav a:hover { background: var(--fondo); color: var(--enlace); }
+@media (max-width: 420px) { .nav ul { gap: 0; padding: 8px 6px; } .nav a { padding: 8px 9px; font-size: 14px; } }
+.nav a[aria-current="page"] { background: var(--azul); color: #fff; }
+
+/* ---------- contenido ---------- */
+.envoltura { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+main.envoltura { padding-top: 24px; padding-bottom: 48px; }
+.tarjeta { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 18px; padding: 22px 20px; }
+@media (min-width: 640px) { .tarjeta { padding: 34px 38px; } }
+.fecha { display: inline-block; font-size: 14px; color: var(--gris); background: var(--fondo);
+  border: 1px solid var(--borde); padding: 4px 12px; border-radius: 999px; margin-bottom: 8px; }
+h2 { color: var(--enlace); font-size: 21px; line-height: 1.3; margin: 34px 0 10px; scroll-margin-top: 70px; }
+h3 { font-size: 17px; margin: 22px 0 6px; }
+p, li { color: var(--texto-suave); }
+ul, ol { padding-left: 22px; }
+li { margin-bottom: 6px; }
+strong { color: var(--texto); }
+.indice { background: var(--fondo); border: 1px solid var(--borde); border-radius: 14px; padding: 14px 18px; margin: 18px 0 8px; }
+.indice p { margin: 0 0 6px; font-weight: 700; color: var(--texto); }
+.indice ol { margin: 0; columns: 2 240px; column-gap: 28px; }
+.indice li { break-inside: avoid; }
+.aviso { background: var(--aviso); border-left: 4px solid var(--naranja); border-radius: 12px; padding: 14px 18px; margin: 18px 0; }
+.aviso p { margin: 0; }
+.tabla { width: 100%; border-collapse: collapse; margin: 12px 0 18px; font-size: 15px; }
+.tabla th, .tabla td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--borde); }
+.tabla th { color: var(--texto); background: var(--fondo); }
+.tabla td { color: var(--texto-suave); }
+@media (max-width: 560px) {                     /* tablas legibles en teléfono: cada fila como tarjeta */
+  .tabla thead { display: none; }
+  .tabla tr { display: block; border: 1px solid var(--borde); border-radius: 12px; margin-bottom: 12px; padding: 6px 4px; }
+  .tabla td { display: block; border: 0; padding: 6px 10px; }
+  .tabla td::before { content: attr(data-t); display: block; font-weight: 700; color: var(--texto); font-size: 13px; }
+}
+.pasos { counter-reset: paso; list-style: none; padding: 0; }
+.pasos li { counter-increment: paso; position: relative; padding: 12px 14px 12px 56px; margin-bottom: 10px;
+  background: var(--fondo); border: 1px solid var(--borde); border-radius: 14px; }
+.pasos li::before { content: counter(paso); position: absolute; left: 14px; top: 12px; width: 30px; height: 30px;
+  border-radius: 50%; background: var(--azul); color: #fff; font-weight: 800; display: grid; place-items: center; }
+.contacto { display: grid; gap: 12px; margin-top: 10px; }
+@media (min-width: 640px) { .contacto { grid-template-columns: 1fr 1fr; } }
+.contacto div { background: var(--fondo); border: 1px solid var(--borde); border-radius: 14px; padding: 16px 18px; }
+.contacto b { display: block; color: var(--texto); }
+.boton { display: inline-block; background: var(--azul); color: #fff; text-decoration: none; font-weight: 700;
+  padding: 12px 20px; border-radius: 12px; margin-top: 6px; }
+.boton:hover { background: var(--azul-oscuro); }
+.boton.secundario { background: var(--naranja); }
+
+/* ---------- pie ---------- */
+.pie { text-align: center; color: var(--gris); font-size: 14px; padding: 8px 16px 40px; }
+.pie nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 16px; margin-bottom: 8px; }
+@media print { .nav, .pie nav { display: none; } .tarjeta { border: 0; } body { background: #fff; } }
